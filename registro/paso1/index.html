@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registro · Paso 1 · ASOLOG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="registro-paso1">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img alt="ASOLOG" src="https://www.figma.com/api/mcp/asset/50190564-90b6-49e8-acab-d29ab44623b8" />
+        </div>
+        <nav class="main-nav" aria-label="Menú principal">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Empleos</a></li>
+            <li><a href="#">Estudios</a></li>
+            <li><a class="active" href="#">Membresías</a></li>
+            <li><a href="#">Eventos</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn-outline" href="#">Iniciar sesión</a>
+          <a class="btn-primary" href="#">Quiero ser parte</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="registration-steps">
+        <div class="container">
+          <ol class="steps">
+            <li class="step step--active">
+              <span class="step-num">1</span>
+              <span class="step-line step-line--1" aria-hidden="true"></span>
+              <span class="step-label">Datos del Profesional</span>
+            </li>
+            <li class="step">
+              <span class="step-num">2</span>
+              <span class="step-line step-line--2" aria-hidden="true"></span>
+              <span class="step-label">Información Laboral</span>
+            </li>
+            <li class="step">
+              <span class="step-num">3</span>
+              <span class="step-line step-line--3" aria-hidden="true"></span>
+              <span class="step-label">Redes y Promoción</span>
+            </li>
+            <li class="step">
+              <span class="step-num">4</span>
+              <span class="step-line step-line--4" aria-hidden="true"></span>
+              <span class="step-label">Facturación</span>
+            </li>
+            <li class="step">
+              <span class="step-num">5</span>
+              <span class="step-label">Referencia</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="registration-form">
+        <div class="container form-wrap">
+          <form class="card" novalidate>
+            <h2 class="card-title">Ingresa tus datos</h2>
+            <p class="card-sub">Completa tus datos personales para crear tu membresía</p>
+
+            <fieldset class="group">
+              <legend class="group-title">Información Personal</legend>
+              <div class="grid grid-2">
+                <label>
+                  <span class="label-text">Nombre</span>
+                  <input type="text" name="nombre" />
+                </label>
+                <label>
+                  <span class="label-text">Apellidos</span>
+                  <input type="text" name="apellidos" />
+                </label>
+
+                <label>
+                  <span class="label-text">Fecha de Nacimiento</span>
+                  <input type="date" name="nacimiento" />
+                </label>
+                <label>
+                  <span class="label-text">Documento de Identidad</span>
+                  <input type="text" name="documento" />
+                </label>
+
+                <label>
+                  <span class="label-text">Dirección de Residencia</span>
+                  <input type="text" name="direccion" />
+                </label>
+                <label>
+                  <span class="label-text">Correo Personal</span>
+                  <input type="email" name="correo_personal" />
+                </label>
+
+                <label class="full">
+                  <span class="label-text">Correo Laboral</span>
+                  <input type="email" name="correo_laboral" />
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="group">
+              <legend class="group-title">Información Adicional</legend>
+              <label class="full">
+                <span class="label-text">Celular / Whatsapp</span>
+                <input type="tel" name="celular" />
+              </label>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="button" class="btn-back">Atrás</button>
+              <button type="submit" class="btn-next">Siguiente</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy;2025 Asolog. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+  </body>
+</html>
