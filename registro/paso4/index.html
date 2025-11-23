@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registro · Paso 4 · ASOLOG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="registro-paso4">
+    <main class="main">
+      <section class="registration-steps">
+        <div class="container">
+          <ol class="steps">
+            <li class="step step--complete">
+              <span class="step-num">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 6.5L5 10L15 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="step-label">Datos del Profesional</span>
+            </li>
+            <span class="step-line"></span>
+            <li class="step step--complete">
+              <span class="step-num">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 6.5L5 10L15 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="step-label">Información Laboral</span>
+            </li>
+            <span class="step-line"></span>
+            <li class="step step--complete">
+              <span class="step-num">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 6.5L5 10L15 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="step-label">Redes y Promoción</span>
+            </li>
+            <span class="step-line"></span>
+            <li class="step step--active">
+              <span class="step-num">4</span>
+              <span class="step-label">Facturación</span>
+            </li>
+            <span class="step-line"></span>
+            <li class="step">
+              <span class="step-num">5</span>
+              <span class="step-label">Referencia</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="registration-form">
+        <div class="container form-wrap">
+          <form class="card" novalidate>
+            <h2 class="card-title">Datos de Facturación</h2>
+            <p class="card-sub">Información necesaria para las facturas.</p>
+
+            <fieldset class="group">
+              <legend class="group-title">Información de Facturación</legend>
+              <div class="grid grid-2">
+                <label>
+                  <span class="label-text">RUC</span>
+                  <input type="text" name="ruc" />
+                </label>
+                <label>
+                  <span class="label-text">Razón Social</span>
+                  <input type="text" name="razon_social" />
+                </label>
+
+                <label class="full">
+                  <span class="label-text">Dirección</span>
+                  <input type="text" name="direccion_facturacion" />
+                </label>
+
+                <label>
+                  <span class="label-text">Teléfono Fijo</span>
+                  <input type="tel" name="telefono_fijo" />
+                </label>
+                <label>
+                  <span class="label-text">Centro para Facturación</span>
+                  <input type="text" name="centro_facturacion" />
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="button" class="btn-back">Atrás</button>
+              <button type="submit" class="btn-next">Siguiente</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
