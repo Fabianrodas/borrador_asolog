@@ -343,3 +343,14 @@ textarea {
 	resize: vertical;
 }
 
+/* Paso 2: estado de paso completado (check) */
+.step--complete .step-num {
+	background: #00C950; /* verde de Figma */
+	color: #fff;
+}
+.step--complete .step-num svg {
+	display: block;
+	width: 16px;
+	height: 12px;
+}
+
