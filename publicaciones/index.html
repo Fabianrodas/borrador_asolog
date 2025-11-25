@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Publicaciones · ASOLOG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="publicaciones">
+
+        <section class="layout-publicaciones">
+            <!-- ==== SIDEBAR IZQUIERDA ==== -->
+            <aside class="feed-sidebar-left">
+
+                <!-- Feed Corporativo -->
+                <div class="card-feed" aria-labelledby="sidebar-left-title">
+                    <div class="card-feed-banner">
+                        <div class="card-feed-icon-circle">
+                            <!-- Icono corporativo -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.333 16H18.6663" stroke="#003B4A" stroke-width="2.66667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.333 10.6667H18.6663" stroke="#003B4A" stroke-width="2.66667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18.6663 28V24C18.6663 23.2927 18.3854 22.6145 17.8853 22.1144C17.3852 21.6143 16.7069 21.3333 15.9997 21.3333C15.2924 21.3333 14.6142 21.6143 14.1141 22.1144C13.614 22.6145 13.333 23.2927 13.333 24V28"
+                                    stroke="#003B4A" stroke-width="2.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M8.00033 13.3333H5.33366C4.62641 13.3333 3.94814 13.6143 3.44804 14.1144C2.94794 14.6145 2.66699 15.2927 2.66699 16V25.3333C2.66699 26.0406 2.94794 26.7188 3.44804 27.2189C3.94814 27.719 4.62641 28 5.33366 28H26.667C27.3742 28 28.0525 27.719 28.5526 27.2189C29.0527 26.7188 29.3337 26.0406 29.3337 25.3333V12C29.3337 11.2927 29.0527 10.6145 28.5526 10.1144C28.0525 9.61426 27.3742 9.33331 26.667 9.33331H24.0003"
+                                    stroke="#003B4A" stroke-width="2.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M8 28V6.66667C8 5.95942 8.28095 5.28115 8.78105 4.78105C9.28115 4.28095 9.95942 4 10.6667 4H21.3333C22.0406 4 22.7189 4.28095 23.219 4.78105C23.719 5.28115 24 5.95942 24 6.66667V28"
+                                    stroke="#003B4A" stroke-width="2.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card-feed-body">
+                        <h2 id="sidebar-left-title">Feed Corporativo</h2>
+                        <p class="card-feed-subtitle">Red de empresas profesionales</p>
+
+                        <div class="card-feed-separator"></div>
+
+                        <ul class="card-feed-stats">
+                            <li>
+                                <span>Empresas en red</span>
+                                <span class="stat-number">4</span>
+                            </li>
+                            <li>
+                                <span>Total publicaciones</span>
+                                <span class="stat-number">10</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empresas -->
+                <div class="card card-empresas-list">
+                    <div class="card-empresas-header">
+                        <h3>Empresas</h3>
+                        <button class="icon-button">+</button>
+                    </div>
+
+                    <ul class="empresas-list">
+                        <!-- TODAS -->
+                        <li class="empresa-item empresa-item--all">
+                            <div class="empresa-icon empresa-icon--all">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33301 10H11.6663" stroke="white" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.33301 6.66663H11.6663" stroke="white" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.6663 17.5V15C11.6663 14.558 11.4907 14.1341 11.1782 13.8215C10.8656 13.509 10.4417 13.3334 9.99967 13.3334C9.55765 13.3334 9.13372 13.509 8.82116 13.8215C8.5086 14.1341 8.33301 14.558 8.33301 15V17.5"
+                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.00033 8.33337H3.33366C2.89163 8.33337 2.46771 8.50897 2.15515 8.82153C1.84259 9.13409 1.66699 9.55801 1.66699 10V15.8334C1.66699 16.2754 1.84259 16.6993 2.15515 17.0119C2.46771 17.3244 2.89163 17.5 3.33366 17.5H16.667C17.109 17.5 17.5329 17.3244 17.8455 17.0119C18.1581 16.6993 18.3337 16.2754 18.3337 15.8334V7.50004C18.3337 7.05801 18.1581 6.63409 17.8455 6.32153C17.5329 6.00897 17.109 5.83337 16.667 5.83337H15.0003"
+                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5 17.5V4.16667C5 3.72464 5.17559 3.30072 5.48816 2.98816C5.80072 2.67559 6.22464 2.5 6.66667 2.5H13.3333C13.7754 2.5 14.1993 2.67559 14.5118 2.98816C14.8244 3.30072 15 3.72464 15 4.16667V17.5"
+                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="empresa-text">
+                                <div class="empresa-nombre">Todas</div>
+                                <div class="empresa-sub">Ver todo</div>
+                            </div>
+                        </li>
+
+                        <!-- GRUPO TRAMACO -->
+                        <li class="empresa-item">
+                            <div class="empresa-icon empresa-icon--tramaco">
+                                <img src="../public/images/grupotramaco.png" alt="Grupo Tramaco"
+                                    class="empresa-logo-img">
+                            </div>
+                            <div class="empresa-text">
+                                <div class="empresa-nombre">Grupo Tramaco</div>
+                                <div class="empresa-sub">12.4K</div>
+                            </div>
+                        </li>
+
+                        <!-- PORTRANS -->
+                        <li class="empresa-item">
+                            <div class="empresa-icon empresa-icon--portrans">
+                                <img src="../public/images/portrans.png" alt="Portrans" class="empresa-logo-img">
+                            </div>
+                            <div class="empresa-text">
+                                <div class="empresa-nombre">Portrans</div>
+                                <div class="empresa-sub">8.9K</div>
+                            </div>
+                        </li>
+
+                        <!-- AGUNSA -->
+                        <li class="empresa-item">
+                            <div class="empresa-icon empresa-icon--agunsa">
+                                <img src="../public/images/agunsa.png" alt="AGUNSA" class="empresa-logo-img">
+                            </div>
+                            <div class="empresa-text">
+                                <div class="empresa-nombre">AGUNSA</div>
+                                <div class="empresa-sub">15.6K</div>
+                            </div>
+                        </li>
+
+                        <!-- REPUESTOS MANSUERAS -->
+                        <li class="empresa-item">
+                            <div class="empresa-icon empresa-icon--repuestos">
+                                <img src="../public/images/mansuera.png" alt="Repuestos Mansueras"
+                                    class="empresa-logo-img">
+                            </div>
+                            <div class="empresa-text">
+                                <div class="empresa-nombre">Repuestos Mansueras</div>
+                                <div class="empresa-sub">6.2K</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tendencias -->
+                <div class="card card-tendencias">
+                    <div class="tendencias-header">
+                        <span class="tendencias-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.667 4.66663H14.667V8.66663" stroke="#00AFC9" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6663 4.66663L8.99967 10.3333L5.66634 6.99996L1.33301 11.3333"
+                                    stroke="#00AFC9" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="tendencias-title">Tendencias</span>
+                    </div>
+
+                    <ul class="tendencias-list">
+                        <li>
+                            <span class="tendencia-tag">#Logística</span>
+                            <span class="tendencia-count">15 publicaciones</span>
+                        </li>
+                        <li>
+                            <span class="tendencia-tag">#Transporte</span>
+                            <span class="tendencia-count">12 publicaciones</span>
+                        </li>
+                        <li>
+                            <span class="tendencia-tag">#Innovación</span>
+                            <span class="tendencia-count">8 publicaciones</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <!-- ===== TEMPLATE PARA LOS POSTS (se reutiliza) ===== -->
+            <template id="post-template">
+                <article class="post-card">
+                    <header class="post-header">
+                        <div class="brand">
+                            <!-- wrapper para reutilizar estilos de Empresas -->
+                            <div class="brand-icon">
+                                <!-- Logo imagen -->
+                                <img class="brand-logo" alt="">
+                                <!-- Avatar con iniciales -->
+                                <div class="brand-avatar">RM</div>
+                            </div>
+
+                            <div>
+                                <div class="brand-name"></div>
+                                <div class="brand-meta"></div>
+                            </div>
+                        </div>
+                        <div class="tag"></div>
+                    </header>
+
+                    <div class="post-body"></div>
+
+                    <div class="post-image">
+                        <img class="post-image-img" alt="">
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="post-stats">
+                        <div class="post-stats-icons">
+                            <!-- mini like -->
+                            <span class="stat-icon stat-icon-like">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_like)">
+                                        <path d="M3.5 5V11V5Z" fill="white" />
+                                        <path d="M3.5 5V11" stroke="white" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M7.5 2.94L7 5H9.915C10.0702 5 10.2234 5.03615 10.3622 5.10557C10.5011 5.175 10.6219 5.2758 10.715 5.4C10.8081 5.5242 10.8711 5.66837 10.8989 5.82111C10.9266 5.97386 10.9185 6.13096 10.875 6.28L9.71 10.28C9.64942 10.4877 9.5231 10.6702 9.35 10.8C9.1769 10.9298 8.96637 11 8.75 11H2C1.73478 11 1.48043 10.8946 1.29289 10.7071C1.10536 10.5196 1 10.2652 1 10V6C1 5.73478 1.10536 5.48043 1.29289 5.29289C1.48043 5.10536 1.73478 5 2 5H3.38C3.56604 4.9999 3.74837 4.94791 3.90648 4.84986C4.06459 4.75181 4.19221 4.61161 4.275 4.445L6 1C6.23579 1.00292 6.46787 1.05908 6.6789 1.1643C6.88994 1.26951 7.07446 1.42105 7.2187 1.6076C7.36294 1.79415 7.46316 2.01088 7.51187 2.2416C7.56058 2.47232 7.55652 2.71107 7.5 2.94Z"
+                                            fill="white" stroke="white" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_like">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+
+                            <!-- mini repost -->
+                            <span class="stat-icon stat-icon-repost">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.5H11V6.5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11 3.5L6.75 7.75L4.25 5.25L1 8.5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="post-stats-text">
+                            <span class="stat-likes"></span>
+                            <span class="stat-comments"></span>
+                            <span class="stat-shares"></span>
+                        </div>
+                    </div>
+
+                    <!-- Acciones -->
+                    <div class="post-actions">
+                        <button>
+                            <span class="action-icon">
+                                <!-- icono me gusta 16px -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66699 6.66663V14.6666" stroke="#4A5565" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M9.99967 3.92004L9.33301 6.66671H13.2197C13.4267 6.66671 13.6308 6.7149 13.816 6.80747C14.0011 6.90004 14.1621 7.03445 14.2863 7.20004C14.4105 7.36564 14.4945 7.55787 14.5315 7.76153C14.5685 7.96518 14.5576 8.17466 14.4997 8.37337L12.9463 13.7067C12.8656 13.9837 12.6971 14.2269 12.4663 14.4C12.2355 14.5731 11.9548 14.6667 11.6663 14.6667H2.66634C2.31272 14.6667 1.97358 14.5262 1.72353 14.2762C1.47348 14.0261 1.33301 13.687 1.33301 13.3334V8.00004C1.33301 7.64642 1.47348 7.30728 1.72353 7.05723C1.97358 6.80718 2.31272 6.66671 2.66634 6.66671H4.50634C4.7544 6.66658 4.9975 6.59725 5.20831 6.46652C5.41912 6.33579 5.58929 6.14885 5.69967 5.92671L7.99967 1.33337C8.31406 1.33727 8.6235 1.41215 8.90488 1.55244C9.18625 1.69272 9.43229 1.89478 9.62461 2.14351C9.81693 2.39224 9.95055 2.68121 10.0155 2.98884C10.0804 3.29647 10.075 3.6148 9.99967 3.92004Z"
+                                        stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span>Me gusta</span>
+                        </button>
+
+                        <button>
+                            <span class="action-icon">
+                                <!-- icono comentar -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.99511 10.8946C2.09314 11.1419 2.11496 11.4128 2.05778 11.6726L1.34778 13.866C1.3249 13.9772 1.33082 14.0924 1.36496 14.2007C1.39911 14.309 1.46035 14.4068 1.54289 14.4848C1.62543 14.5628 1.72652 14.6184 1.83658 14.6464C1.94664 14.6744 2.06202 14.6738 2.17178 14.6446L4.44711 13.9793C4.69226 13.9307 4.94613 13.9519 5.17978 14.0406C6.60337 14.7054 8.21602 14.8461 9.73321 14.4378C11.2504 14.0295 12.5746 13.0984 13.4722 11.8089C14.3699 10.5193 14.7832 8.95423 14.6393 7.38966C14.4954 5.82509 13.8036 4.3616 12.6858 3.25742C11.5681 2.15324 10.0962 1.47932 8.53003 1.35456C6.96382 1.2298 5.40387 1.66221 4.12541 2.57552C2.84694 3.48882 1.93213 4.82432 1.54237 6.34638C1.15262 7.86845 1.31296 9.47926 1.99511 10.8946Z"
+                                        stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span>Comentar</span>
+                        </button>
+
+                        <button>
+                            <span class="action-icon">
+                                <!-- icono compartir -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_share)">
+                                        <path d="M1.33301 6L3.33301 4L5.33301 6" stroke="#4A5565" stroke-width="1.33333"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M8.66634 12H4.66634C4.31272 12 3.97358 11.8595 3.72353 11.6095C3.47348 11.3594 3.33301 11.0203 3.33301 10.6667V4"
+                                            stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M14.667 10L12.667 12L10.667 10" stroke="#4A5565" stroke-width="1.33333"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.33301 4H11.333C11.6866 4 12.0258 4.14048 12.2758 4.39052C12.5259 4.64057 12.6663 4.97971 12.6663 5.33333V12"
+                                            stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_share">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span>Compartir</span>
+                        </button>
+
+                        <button>
+                            <span class="action-icon">
+                                <!-- icono enviar -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.69021 14.4573C9.71554 14.5205 9.75957 14.5743 9.81639 14.6117C9.87322 14.6491 9.94011 14.6682 10.0081 14.6664C10.0761 14.6647 10.1419 14.6422 10.1968 14.6019C10.2516 14.5617 10.2928 14.5057 10.3149 14.4413L14.6482 1.77466C14.6695 1.71559 14.6736 1.65167 14.66 1.59037C14.6463 1.52907 14.6154 1.47293 14.571 1.42852C14.5266 1.3841 14.4705 1.35326 14.4092 1.33959C14.3479 1.32592 14.2839 1.32999 14.2249 1.35133L1.55821 5.68466C1.49388 5.70673 1.43783 5.74794 1.39759 5.80278C1.35736 5.85761 1.33486 5.92344 1.33312 5.99144C1.33138 6.05943 1.35047 6.12632 1.38785 6.18315C1.42523 6.23997 1.47909 6.284 1.54221 6.30933L6.82888 8.42933C6.996 8.49624 7.14785 8.5963 7.27526 8.72348C7.40266 8.85066 7.503 9.00233 7.57021 9.16933L9.69021 14.4573Z"
+                                        stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.5697 1.43127L7.27637 8.72394" stroke="#4A5565" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span>Enviar</span>
+                        </button>
+                    </div>
+                </article>
+            </template>
+            <!-- ===== FIN TEMPLATE ===== -->
+
+            <!-- ==== FEED CENTRAL (vacío, JS lo llena) ==== -->
+            <section class="feed-main" aria-label="Feed principal">
+            </section>
+
+            <!-- ==== SIDEBAR DERECHA ==== -->
+            <aside class="feed-sidebar-right">
+                <!-- NOTICIAS -->
+                <div class="card card-noticias">
+                    <div class="noticias-header">
+                        <span class="noticias-icon">
+                            <!-- icono noticias -->
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_205_5732)">
+                                    <path d="M10.0003 12H6.66699" stroke="#00AFC9" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.0003 9.33331H6.66699" stroke="#00AFC9" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M2.66634 14.6666H13.333C13.6866 14.6666 14.0258 14.5262 14.2758 14.2761C14.5259 14.0261 14.6663 13.6869 14.6663 13.3333V2.66665C14.6663 2.31302 14.5259 1.97389 14.2758 1.72384C14.0258 1.47379 13.6866 1.33331 13.333 1.33331H5.33301C4.97939 1.33331 4.64025 1.47379 4.3902 1.72384C4.14015 1.97389 3.99967 2.31302 3.99967 2.66665V13.3333C3.99967 13.6869 3.8592 14.0261 3.60915 14.2761C3.3591 14.5262 3.01996 14.6666 2.66634 14.6666ZM2.66634 14.6666C2.31272 14.6666 1.97358 14.5262 1.72353 14.2761C1.47348 14.0261 1.33301 13.6869 1.33301 13.3333V7.33331C1.33301 6.97969 1.47348 6.64055 1.72353 6.3905C1.97358 6.14046 2.31272 5.99998 2.66634 5.99998H3.99967"
+                                        stroke="#00AFC9" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M11.3337 4H7.33366C6.96547 4 6.66699 4.29848 6.66699 4.66667V6C6.66699 6.36819 6.96547 6.66667 7.33366 6.66667H11.3337C11.7018 6.66667 12.0003 6.36819 12.0003 6V4.66667C12.0003 4.29848 11.7018 4 11.3337 4Z"
+                                        stroke="#00AFC9" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_205_5732">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <h3 class="noticias-title">Noticias del sector</h3>
+                    </div>
+
+                    <ul class="noticias-list">
+                        <li class="noticia-item">
+                            <span class="noticia-titulo">
+                                ASOLOG y el futuro del comercio electrónico en Ecuador
+                            </span>
+                            <span class="noticia-meta">
+                                Hace 2 horas • 1,234 lectores
+                            </span>
+                        </li>
+
+                        <li class="noticia-item">
+                            <span class="noticia-titulo">
+                                Estrategias para optimizar transporte terrestre en Ecuador
+                            </span>
+                            <span class="noticia-meta">
+                                Hace 1 día • 834 lectores
+                            </span>
+                        </li>
+
+                        <li class="noticia-item">
+                            <span class="noticia-titulo">
+                                ASOLOG impulsa la adopción de normas ISO en logística
+                            </span>
+                            <span class="noticia-meta">
+                                Hace 3 días • 2,132 lectores
+                            </span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="noticias-link">Ver todas las noticias</a>
+                </div>
+
+                <!-- ==== EVENTOS ==== -->
+                <div class="card card-eventos">
+                    <div class="eventos-header">
+                        <span class="eventos-icon">
+                            <!-- icono eventos -->
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.6663 13.3334V2.66671C10.6663 2.31309 10.5259 1.97395 10.2758 1.7239C10.0258 1.47385 9.68663 1.33337 9.33301 1.33337H6.66634C6.31272 1.33337 5.97358 1.47385 5.72353 1.7239C5.47348 1.97395 5.33301 2.31309 5.33301 2.66671V13.3334"
+                                    stroke="#00AFC9" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.333 4H2.66634C1.92996 4 1.33301 4.59695 1.33301 5.33333V12C1.33301 12.7364 1.92996 13.3333 2.66634 13.3333H13.333C14.0694 13.3333 14.6663 12.7364 14.6663 12V5.33333C14.6663 4.59695 14.0694 4 13.333 4Z"
+                                    stroke="#00AFC9" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <h3 class="eventos-title">Próximos eventos</h3>
+                    </div>
+
+                    <div class="eventos-list">
+                        <!-- Evento 1 -->
+                        <article class="evento-item evento-item--teal">
+                            <h4 class="evento-nombre">Expo Logística 2025</h4>
+                            <p class="evento-meta">25 de Octubre • Virtual</p>
+                        </article>
+
+                        <!-- Evento 2 -->
+                        <article class="evento-item evento-item--navy">
+                            <h4 class="evento-nombre">Cumbre de Transporte</h4>
+                            <p class="evento-meta">2 de Noviembre • Guayaquil</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="card card-acerca">
+                    <div class="acerca-header">
+                        <span class="acerca-icon">
+                            <!-- iconito círculo info -->
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.10156 7.51953C5.98925 7.51953 7.51953 5.98925 7.51953 4.10156C7.51953 2.21387 5.98925 0.683594 4.10156 0.683594C2.21387 0.683594 0.683594 2.21387 0.683594 4.10156C0.683594 5.98925 2.21387 7.51953 4.10156 7.51953Z"
+                                    stroke="#99A1AF" stroke-width="0.683594" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4.10156 5.46875V4.10156" stroke="#99A1AF" stroke-width="0.683594"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.10156 2.73438H4.10498" stroke="#99A1AF" stroke-width="0.683594"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="acerca-title">Acerca de esta red</span>
+                    </div>
+
+                    <p class="acerca-descripcion">
+                        Conecta con las principales empresas del sector logístico,
+                        transporte y servicios industriales en Ecuador.
+                    </p>
+
+                    <div class="acerca-links">
+                        <a href="#">Acerca de</a>
+                        <span>•</span>
+                        <a href="#">Ayuda</a>
+                        <span>•</span>
+                        <a href="#">Privacidad</a>
+                        <span>•</span>
+                        <a href="#">Términos</a>
+                    </div>
+
+                    <p class="acerca-copy">© 2025 Feed Corporativo</p>
+                </div>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <!-- ===== JS: genera los posts desde JSON ===== -->
+    <script>
+        const posts = [
+            {
+                id: "tramaco",
+                brandType: "image",
+                brandLogo: "../public/images/grupotramaco.png",
+                brandAlt: "Grupo Tramaco",
+                brandName: "Grupo Tramaco",
+                followers: "12,458 seguidores",
+                time: "Hace 2 horas",
+                tag: "Innovación",
+                paragraphs: [
+                    "Estamos orgullosos de anunciar la expansión de nuestra flota logística 🚛",
+                    "Hemos incorporado 15 nuevos vehículos de última generación que nos permitirán mejorar nuestros tiempos de entrega en un 30%. Este es un paso más en nuestro compromiso con la excelencia logística y el servicio a nuestros clientes.",
+                    "#Logística #Innovación #GrupoTramaco"
+                ],
+                imageUrl: "https://www.figma.com/api/mcp/asset/d94369bb-ad4b-48f0-abc1-252784d19786",
+                imageAlt: "Flota Grupo Tramaco",
+                stats: { likes: 142, comments: 23, shares: 12 }
+            },
+            {
+                id: "agunsa",
+                brandType: "image",
+                brandLogo: "../public/images/agunsa.png",
+                brandAlt: "AGUNSA",
+                brandName: "AGUNSA",
+                followers: "8,932 seguidores",
+                time: "Hace 4 horas",
+                tag: "Aniversario",
+                paragraphs: [
+                    "Otro día exitoso en nuestras operaciones portuarias ⚓",
+                    "Hoy completamos la llegada de 3 buques de gran envergadura. Nuestro equipo trabajó 24/7 para garantizar operaciones fluidas y eficientes.",
+                    "#AGUNSA #ServiciosMarítimos #Puerto #Logística"
+                ],
+                imageUrl: "https://www.figma.com/api/mcp/asset/80f7f9b4-4676-4aee-b333-4ddd1756859a",
+                imageAlt: "Operaciones portuarias",
+                stats: { likes: 256, comments: 47, shares: 34 }
+            },
+            {
+                id: "mansueras",
+                brandType: "avatar",        // usa iniciales
+                brandAvatar: "RM",
+                brandAlt: "Repuestos Mansueras",
+                brandName: "Repuestos Mansueras",
+                followers: "6,234 seguidores",
+                time: "Hace 8 horas",
+                tag: "Productos",
+                paragraphs: [
+                    "¡Nueva línea de repuestos industriales disponible! 🔧",
+                    "Contamos con las mejores marcas del mercado y precios competitivos. Nuestro equipo de expertos está listo para brindarte asesoría personalizada.",
+                    "#RepuestosMangueras #Repuestos #Industrial #Maquinaria"
+                ],
+                imageUrl: "https://www.figma.com/api/mcp/asset/3588260d-df60-4de2-becc-3a379b7b731d",
+                imageAlt: "Repuestos industriales",
+                stats: { likes: 87, comments: 15, shares: 8 }
+            }
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const feed = document.querySelector(".feed-main");
+            const template = document.querySelector("#post-template");
+
+            posts.forEach(post => {
+                const node = template.content.cloneNode(true);
+
+                const logoImg = node.querySelector(".brand-logo");
+                const avatar = node.querySelector(".brand-avatar");
+                const brandName = node.querySelector(".brand-name");
+                const brandMeta = node.querySelector(".brand-meta");
+                const tag = node.querySelector(".tag");
+                const body = node.querySelector(".post-body");
+                const postImg = node.querySelector(".post-image-img");
+                const statLikes = node.querySelector(".stat-likes");
+                const statComments = node.querySelector(".stat-comments");
+                const statShares = node.querySelector(".stat-shares");
+
+                // logo imagen vs avatar
+                if (post.brandType === "image") {
+                    logoImg.src = post.brandLogo;
+                    logoImg.alt = post.brandAlt || post.brandName;
+                    logoImg.style.display = "block";
+                    avatar.style.display = "none";
+                } else {
+                    logoImg.style.display = "none";
+                    avatar.style.display = "flex";
+                    avatar.textContent = post.brandAvatar || "";
+                }
+
+                brandName.textContent = post.brandName;
+                brandMeta.textContent = `${post.followers} • ${post.time}`;
+                tag.textContent = post.tag;
+
+                body.innerHTML = "";
+                post.paragraphs.forEach(text => {
+                    const p = document.createElement("p");
+                    p.textContent = text;
+                    body.appendChild(p);
+                });
+
+                postImg.src = post.imageUrl;
+                postImg.alt = post.imageAlt || "";
+
+                statLikes.textContent = `${post.stats.likes} me gusta`;
+                statComments.textContent = `${post.stats.comments} comentarios`;
+                statShares.textContent = `${post.stats.shares} veces compartido`;
+
+                feed.appendChild(node);
+            });
+        });
+    </script>
+</body>
+
+</html>

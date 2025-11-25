@@ -1,0 +1,750 @@
+:root{
+  --color-primary: #003B49;
+  --color-accent: #00AFC9;
+  --bg: #f7f8fa;
+  --muted: #6a7282;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #172026;
+}
+
+/* ==== GRID GENERAL ==== */
+.layout-publicaciones {
+  max-width: 1200px;
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  gap: 24px;
+}
+
+/* ==== TARJETAS GENÉRICAS ==== */
+.card {
+  background:#fff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* ==================== */
+/*   FEED CORPORATIVO   */
+/* ==================== */
+
+.card-feed {
+  width: 328px;
+  max-width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+/* Banner azulito */
+.card-feed-banner {
+  width: 100%;
+  height: 64px;
+  background: linear-gradient(180deg, #003B4A 0%, #00AFC9 100%);
+  position: relative;
+}
+
+/* Círculo con icono */
+.card-feed-icon-circle {
+  position: absolute;
+  left: 24px;
+  bottom: -32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 33554400px;
+  background: #FFF;
+  box-shadow: 0 0 0 4px #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenido blanco */
+.card-feed-body {
+  padding: 40px 16px 16px;
+}
+
+/* Título y subtítulo */
+.card-feed-body h2 {
+  margin: 0;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-feed-subtitle {
+  margin: 4px 0 10px;
+  color: #6A7282;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Separador */
+.card-feed-separator {
+  width: 296px;
+  max-width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.10);
+  margin: 8px 0 10px;
+}
+
+/* Stats */
+.card-feed-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-feed-stats li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6A7282;
+}
+
+.card-feed-stats li + li {
+  margin-top: 4px;
+}
+
+.card-feed-stats .stat-number {
+  color: #003B4A;
+}
+
+.feed-sidebar-left .card {
+  margin-bottom: 20px;
+}
+
+
+/* ==================== */
+/*      EMPRESAS        */
+/* ==================== */
+
+.card-empresas-list {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #FFF;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.card-empresas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-empresas-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.icon-button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6A7282;
+}
+
+/* Lista */
+.empresas-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Fila genérica */
+.empresa-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px;
+  border-radius: 12px;
+}
+
+/* Fila "Todas" */
+.empresa-item--all {
+  background: #E6F4FF; /* celestito del Figma */
+}
+
+/* Icono genérico */
+.empresa-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODAS: 40x40, radio 10, gradiente */
+.empresa-icon--all {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #003B4A 0%, #00AFC9 100%);
+}
+
+/* Círculos de empresas (40x40, redondos) */
+.empresa-icon--tramaco,
+.empresa-icon--portrans,
+.empresa-icon--agunsa,
+.empresa-icon--repuestos {
+  width: 40px;
+  height: 40px;
+  border-radius: 33554400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Colores específicos */
+.empresa-icon--tramaco {
+  background: #1E40AF;
+  box-shadow: 0 0 0 2px #F3F4F6;
+}
+
+.empresa-icon--portrans {
+  background: #EA3030;
+}
+
+.empresa-icon--agunsa {
+  background: #EA3030; /* en Figma el círculo se ve rojo */
+  box-shadow: 0 0 0 2px #F3F4F6;
+}
+
+.empresa-icon--repuestos {
+  background: #DEDEDE;
+}
+
+.empresa-logo-img {
+  width: 39px;     /* tamaño ideal para logos redondos */
+  height: 39px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Textos */
+.empresa-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.empresa-nombre {
+  font-size: 14px;
+  color: #101828;
+}
+
+.empresa-sub {
+  font-size: 12px;
+  color: #6A7282;
+}
+
+
+/* ==================== */
+/*      TENDENCIAS      */
+/* ==================== */
+
+.card-tendencias {
+  padding: 16px 16px 0 16px;      /* 16px en lados y arriba, 0 abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;                      /* separación entre header y lista */
+}
+
+/* Header con icono + texto */
+.tendencias-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tendencias-icon svg {
+  display: block;
+}
+
+.tendencias-title {
+  color: #101828;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+/* Lista de hashtags */
+.tendencias-list {
+  list-style: none;
+  margin: 0 0 16px;  /* 16px de espacio al fondo del card */
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;         /* espacio entre cada hashtag */
+}
+
+.tendencias-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Texto del hashtag (#Logística) */
+.tendencia-tag {
+  color: #6A7282;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+/* Texto de “15 publicaciones” */
+.tendencia-count {
+  color: #99A1AF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+/* ==================== */
+/*      FEED POSTS      */
+/* ==================== */
+
+.feed-main{min-height:400px;}
+
+.post-card{
+  background:#fff;
+  border-radius:16px;
+  padding:16px;
+  margin-bottom:20px;
+  box-shadow:0 1px 2px rgba(0,0,0,0.04);
+  border:1px solid rgba(0,0,0,0.06);
+}
+
+.post-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+/* ========= ICONO DE LA EMPRESA EN EL POST ========= */
+
+.post-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* círculo del logo, igual vibe que Empresas */
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #F3F4F6; /* aro gris clarito */
+}
+
+/* Avatar de iniciales (ej: RM) cuando no hay logo */
+.brand-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: none;          /* JS lo pone en flex cuando toque */
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    background: #00AFC9;
+    box-shadow: 0 0 0 2px #F3F4F6;
+}
+
+.brand-name{
+  font-weight:600;
+  font-size:14px;
+}
+
+.brand-meta{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.tag{
+  background:rgba(0,175,201,0.1);
+  color:var(--color-accent);
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:12px;
+}
+
+.post-body{
+  color:#1e2939;
+  margin:12px 0;
+  line-height:1.45;
+  font-size:14px;
+}
+
+.post-image img{
+  width:100%;
+  height:auto;
+  border-radius:8px;
+}
+
+/* ===== STATS (corrige tu problema) ===== */
+
+.post-stats {
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #4A5565;
+}
+
+
+.post-stats-icons {
+    display: flex;
+    align-items: center;
+    gap: -6px; /* hace que se superpongan suave como en el mockup */
+}
+
+.stat-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.stat-icon-like {
+    background: #00AFC9;
+}
+
+.stat-icon-repost {
+    background: #003B4A;
+}
+
+
+.post-stats-text {
+    display: flex;
+    gap: 30px;
+    color: #4A5565;
+    font-size: 14px;
+}
+
+
+.post-stats-text span {
+    white-space: nowrap;
+}
+
+/* Barra de acciones del post */
+.post-actions {
+  display: flex;
+  border-top: 1px solid #E5E7EB;     /* separador gris como en el diseño */
+  padding: 8px 32px 12px;            /* espacio interior arriba/lados/abajo */
+  margin: 0;                         /* que no meta espacio extra */
+}
+
+/* Cada botón ocupa el mismo ancho */
+.post-actions button {
+  flex: 1;                           /* todos se reparten el ancho */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;                          /* espacio entre icono y texto */
+
+  background: transparent;
+  border: 0;
+  padding: 8px 0;                    /* solo vertical, nada lateral */
+  font-size: 14px;
+  color: #4A5565;
+  cursor: pointer;
+}
+
+/* Opcional: quitar cualquier borde/hover raro heredado */
+.post-actions button:focus {
+  outline: none;
+}
+
+/* ==================== */
+/*   SIDEBAR DERECHA    */
+/* ==================== */
+
+/* ========= NOTICIAS DEL SECTOR ========= */
+
+/* Ajuste fino Noticias del sector */
+.card-noticias {
+  padding: 16px 16px 16px;   /* antes 16px;16px;16px */
+  width: 328px;   /* Igual que la card de la izquierda */
+}
+
+/* Header: icono + título */
+.noticias-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;        /* más pegado al primer item */
+}
+
+/* Quitar márgenes del h3 */
+.noticias-title {
+  margin: 0;                 /* <- ESTO es lo que más se nota */
+  color: #101828;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Lista: un poco menos de espacio entre noticias */
+.noticias-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                 /* antes 16px */
+}
+
+/* Cada bloque de noticia */
+.noticia-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;                        /* espacio entre título y meta */
+}
+
+/* Título de noticia */
+.noticia-titulo {
+  color: #003B49;
+  font-family: Geist, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+
+/* texto pequeño */
+.noticia-meta {
+  color: #6A7282;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Link */
+.noticias-link {
+  margin-top: 4px;
+  color: #00AFC9;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+}
+
+.noticias-link:hover {
+  text-decoration: underline;
+}
+
+/* ========= PRÓXIMOS EVENTOS ========= */
+
+.card-eventos {
+  padding: 16px;
+  width: 328px;                 /* mismo ancho que noticias/feed */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* header icono + texto */
+.eventos-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eventos-title {
+  margin: 0;
+  color: #101828;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;            /* 150% */
+}
+
+/* lista de eventos */
+.eventos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                    /* separación entre cada evento */
+}
+
+/* bloque de evento con barrita de color */
+.evento-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;                     /* espacio entre título y fecha */
+  padding: 12px 12px 0 16px;
+  border-radius: 10px;
+  border-left: 4px solid #00AFC9;  /* color por defecto (teal) */
+}
+
+/* primer evento (teal) */
+.evento-item--teal {
+  border-left-color: #00AFC9;
+}
+
+/* segundo evento (azul oscuro) */
+.evento-item--navy {
+  border-left-color: #003B4A;
+}
+
+/* título del evento */
+.evento-nombre {
+  margin: 0;
+  color: #101828;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* fecha + lugar */
+.evento-meta {
+  margin: 0;
+  color: #6A7282;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;            /* 133% */
+}
+
+/* ========= ACERCA DE ESTA RED ========= */
+
+.card-acerca {
+  width: 328px;
+  padding: 16px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* header con iconito + texto */
+.acerca-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.acerca-icon svg {
+  display: block;
+}
+
+.acerca-title {
+  flex: 1 0 0;
+  color: #101828;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+/* descripción gris */
+.acerca-descripcion {
+  margin: 0;
+  width: 253px;
+  color: #6A7282;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px; /* 162.5% */
+  padding-left: 19px;
+  margin-bottom: 2px;
+}
+
+/* links inferiores */
+.acerca-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #6A7282;
+}
+
+.acerca-links a {
+  text-decoration: none;
+  color: #6A7282;
+}
+
+.acerca-links a:hover {
+  text-decoration: underline;
+}
+
+/* copyright */
+.acerca-copy {
+  margin: 0 0 8px;
+  color: #99A1AF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.feed-sidebar-right .card {
+  margin-bottom: 20px !important;   
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width:1100px){
+  .layout-publicaciones{
+    grid-template-columns: 240px 1fr 240px;
+  }
+}
+
+@media (max-width:900px){
+  .layout-publicaciones{
+    grid-template-columns: 1fr 260px;
+  }
+  .feed-sidebar-left{
+    display:none;
+  }
+}
+
+@media (max-width:720px){
+  .layout-publicaciones{
+    grid-template-columns: 1fr;
+  }
+  .feed-sidebar-right{
+    order:3;
+  }
+}
